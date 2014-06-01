@@ -7,6 +7,9 @@ body {
     color:#7B7979;
     font-size: 0.9em;
 }
+body a {
+	text-decoration: none;
+}
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	color:black;
@@ -14,6 +17,9 @@ h2 {
 	text-transform: uppercase;
 }
 /*header*/
+header {
+	margin-top: 2em;
+}
 header ul {
 	font-family: 'Old Standard TT', serif;
 	text-transform: uppercase;
@@ -22,16 +28,45 @@ header ul {
 header li {
 	display: inline-block;
 }
+header a {
+	text-decoration: none;
+	color: black;
+}
+header img {
+	margin: 1em 0;
+}
+.nav {
+	float:right;
+	margin-top: 2em;
+} 
+.nav li {
+	padding-left: 3em;
+}
+.nav a:hover {
+	color: #5E5E5E;
+}
 
 /*main content*/
+
 .wrapper {
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
+	overflow: hidden;
+}
+.main-img {
+	width: 100%;
+	margin: 2em 0;
+}
+.title h1 {
+	text-align: center;
+}
+.title hr {
+  	border: 0.5px solid #CECECE;
 }
 .column { 
     float: left; 
     margin: 3em 2em; 
-    width: 25%; 
+    width: 26%; 
 }
 .column:nth-child(4n) { 
     margin-right: 0; 
@@ -39,8 +74,30 @@ header li {
 .column:nth-child(4n+1) { 
     clear: left; 
 }
-
+.column a,
+.column li {
+    font-size: 0.9em; 
+    line-height: 1.6em;
+}
+.read-more {
+    display: block;
+    color: #A7A5A6;
+    text-transform: uppercase;
+    border: 2px solid #CECECE;
+    float: left;
+    padding: 12px 30px 10px;
+    line-height: 1;
+    margin-top: 20px;
+}
 /*footer*/
+
+footer {
+	width: 100%;
+	background-color: #F1F4F5;
+	margin-top: 2em;
+}
 footer li {
+	width: 20%;
 	list-style: none;
+	padding: 0 9em;
 }
